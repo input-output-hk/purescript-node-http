@@ -5,6 +5,7 @@ var https = require("https");
 
 exports.requestImpl = function (opts) {
     console.log('step1')
+    console.log(opts)
   return function (k) {
     console.log('step2')
     return function () {
